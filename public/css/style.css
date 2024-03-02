@@ -1,0 +1,181 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    flex:1;
+}
+
+/* Navigation bar  */
+.navbar{
+    height: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.fa-compass{
+    color: #FF385C;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222;
+}
+
+/* Footer  */
+
+.f-info{
+    height: 8rem;
+    background-color: #ebebeb;
+}
+
+.f-info,.social-handles, .brand-text, .terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222 !important;
+    flex-wrap:wrap;
+    
+}
+
+.brand-text{
+    flex: 1;
+}
+
+.social-handles, .terms{
+    width: 100%;
+}
+
+.social-handles a, .terms a{
+    margin-left: 0.8rem;
+    text-decoration: none;
+    color: #222222 !important;
+}
+
+.terms a:hover{
+    text-decoration: underline;
+}
+
+.social-handles a:hover{
+    transform: scale(1.3);
+}
+
+/* listing cards */
+.card img{
+    height: 15rem;
+}
+
+.card-img-overlay{
+    opacity: 0;
+    background-color: white;
+}
+
+.card-img-overlay:hover{
+    opacity:30%;
+}
+
+.add-btn{
+    background-color: #FF385C;
+}
+
+/* Show Page */
+.btns{
+    display: flex;
+}
+
+.show img{
+    height: 20rem;
+}
+
+/* MAP */
+#map { width: 90vh;
+    height: 300px;
+}
+
+/* Tax toggle button */
+.tax-toggle{
+    height: 2.5rem;
+    border: 1px solid #121212;
+    border-radius: 1rem;
+    transform: translateY(0.8rem);
+    margin-left: 3rem;
+}
+
+.filter{
+    width: 35px;
+    margin-right: 1.5rem;
+}
+
+.original-img{
+    max-width:350px;
+    max-height: 300px;
+}
+
+
+@media(width <= 550px){
+    .filters{
+        margin-left: 2rem;
+        justify-content: space-evenly;
+    }
+
+    .filter{
+        width: 50px;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+
+    .maps{
+        margin-left: 2rem;
+    }
+
+    #map{
+        height: 200px;
+        width: 300px;
+    }
+
+    .show-card{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .show-title{
+        text-align: center;
+    }
+
+    .navbar-collapse{
+        background-color: white;
+    }
+
+    .reviews-section{
+        display: flex;
+        justify-content: center;
+    }
+
+    .original-img{
+        max-width:350px;
+        max-height: 300px;
+    }
+
+    .victim-category{
+    }
+
+    .tax-toggle{
+        transform: translateY(-0.9rem);
+        margin-left: -2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .search-btn ,.search-inp{
+        display: none !important;
+    }
+     
+    .userdlt{
+        border: none !important;
+        padding: 0 !important;
+        font-weight: bold;
+    }
+}
